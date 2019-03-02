@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/login.css">
+<script type="text/javascript">
+function Validate() {
+    var password = document.getElementById("txtPassword").value;
+    var confirmPassword = document.getElementById("txtConfirmPassword").value;
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head>
+
+
+<body>
+<div class="bigbox" >
+	<header>
+	<a href="./index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="./login.html">Login</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		 </nav>
+	</header>
+	<section>
+		<form action="/action_page.php">
+			<div class="row">
+				<div class="label">
+					<label for="name">Name:</label>
+				</div>
+				<div class="input">
+					<input type="text" name="name" id="name" placeholder=" Enter your name"  required><br /><br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="label">
+					<label for="email">Email:</label>
+				</div>
+				<div class="input">
+					<input type="email" name="email" id="email" placeholder=" Enter your email"  required><br /><br />
+				</div>
+			</div>
+		<div class="row">
+				<div class="label">
+					<label for="name">Password:</label>
+				</div>
+				<div class="input">
+					<input type="password" name="password" id="password" placeholder=" Enter your password" required><br /><br />
+				</div>
+		</div>
+		<div class="row">
+			<div class="label">
+				<label for="confirmPassword">Confirm Password:</label>
+			</div>
+			<div class="input">
+				<input type="password" name="confirmPassword" id="confirmPassword" placeholder=" Confirm your password" required><br /><br />
+			</div>
+		</div>
+			<div class="row">
+				<div class="input">
+					<input type="button" name="register" value="Register">
+				</div>
+			</div>	
+			<div class="row">
+				<p> Already have an account??........<a href="./login.html">Login </a></p>
+			</div>
+		</form>
+		<pre>
+
+
+
+
+
+
+
+
+
+
+
+		</pre>
+	
+		<small>
+			Designed by Nikita.
+		</small>	
+	</section>	
+	<footer>
+		Copyright &copy; 2019. All Rights Reserved. 
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@charset "utf-8";
+.html,body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	font-family: constantia;	
+	-webkit-box-pack:center;
+	-webkit-box-align:stretch;
+	background-image:url('../img/computer-cup.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.bigbox{
+	background-position:100%;
+	-webkit-box-pack: center;
+	-webkit-box-flex: 1;
+
+}
+
+header{
+	padding-top:5px;
+	background-color:black;
+}
+
+header::after{
+	content: " ";
+	clear:both;
+	display: block;
+	visibility: none;
+}
+.logo{
+	width:60px;
+	height: 40px;
+	float:left;
+	padding: 10px;
+}
+
+nav{
+	float:right;
+}
+
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	text-decoration: none;
+	padding:10px 20px;
+	color:white;
+	line-height: 40px;
+	font-weight: bold;
+	font-size:16px; 
+}
+nav ul li a:hover{
+	color:orange;
+	border:1px dashed yellow;
+}
+form{
+	padding: 10px;
+	margin: 10px auto;
+}
+section{
+	max-width: 550px;
+    margin: 20px auto;
+    }
+
+input[type="text"]{
+	border-radius: 25px;
+	height:30px;
+	border:1px solid black;
+	background-color: #ccc;
+	text-indent: 15px;
+}   
+
+input[type="password"]{
+	border-radius: 25px;
+	height: 30px;
+	border:1px solid black;
+	background-color: #ccc;
+	text-indent: 15px;
+}   
+input[type="email"]{
+	border-radius: 25px;
+	height:30px;
+	border:1px solid black;
+	background-color: #ccc;
+	text-indent: 15px;
+}  
+
+input[type="button"]{
+	border-radius: 25px; 
+	height: 40px;
+	width:90px;
+	border:1px solid black;
+	background-color: black;
+	color:white;
+	font-weight: bold;
+	text-align:center;
+}
+
+.row{
+	margin:10px 5px;
+	padding:10px 20px;
+}
+
+.row::after{
+	content:" ";
+	clear:both;
+	visibility: hidden;
+	height: 0px;
+	display:block;
+}
+
+.label{
+	float:left;
+	line-height:30px;
+}
+
+.input{
+	float:right;
+}
+
+::placeholder{
+	font-family: constantia;
+}
+tr{
+	padding:30px;
+}
+
+p a{
+	color:salmon;
+}
+footer{
+	background:black;
+	color:white;
+	text-align: center;
+	padding: 20px;
+	
+}
+	
+
